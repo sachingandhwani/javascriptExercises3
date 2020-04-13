@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>JS Exercise 3</title>
+
+<style>
+body{font-family: Arial, Helvetica, sans-serif; font-size:15px;}
+table{min-width:400px}
+table, th, td {
+  border: 1px solid black; 
+}
+td {
+  padding: 10px;
+}
+#result{margin-top:10px}
+input[type="text"]{width:90%; padding:4px}
+</style>
+</head>
+<body>
+<form>
+<table style="margin-bottom:50px; width:800px" colspan='0' rowspan='0' border='0'>
+	<tr>
+		<th colspan='2' style='padding:8px 0'>Project Details</th>
+	</tr>
+	<tr>
+		<td>Enter a Project ID</td>
+		<td><input type="number" name="Id" id="pId"></td>
+	</tr>
+	<tr>
+		<td>Enter a Project Name</td>
+		<td><input type="text" name="name" id="pName"></td>
+	</tr>
+	<tr>
+		<td style="width: 200px;">Enter a Project Description</td>
+		<td><input type="text" name="description" id="pDescription"></td>
+	</tr>
+	<tr>
+		<td>Enter a Project Status</td>
+		<td><input type="text" name="status" id="pStatus"></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>
+			<input type="button" name="detail" value="Add Project Details" onclick="addProjectDetail()">
+			<input type="reset" name="reset" value="Reset"> 
+		</td>
+	</tr>
+</table>
+<div id="result">
+	<input type="button" id="rowCountEle" onclick="rowCount()" value="Total Row Count" style="display:none" />
+	<h5 id="showRowCount"></h5>
+</div>
+</form>
+
+
+
+
+
+<script src="main.js"></script>	
+</body>
+</html>
